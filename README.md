@@ -334,7 +334,7 @@ plot_linear_regression(x_values, y_values,
 
 ![temp_north.png](https://github.com/kcharb7/World_Weather_Analysis/blob/main/weather_data/temp_north.png)
 
-Using the following code, I determine the r-value to be -0.877, indicating a strong to very strong negative correlation between latitude and temperature in the Northern Hemisphere:
+Using the following code, I determine the r-value to be -0.852, indicating a strong to very strong negative correlation between latitude and temperature in the Northern Hemisphere:
 ```
 # Linear regression on the Northern Hemisphere
 x_values = northern_hemi_df["Lat"]
@@ -356,7 +356,7 @@ plot_linear_regression(x_values, y_values,
 
 ![temp_south.png](https://github.com/kcharb7/World_Weather_Analysis/blob/main/weather_data/temp_south.png)
 
-Using the following code, I determine the r-value to be 0.610, indicating a strong to very strong positive correlation between latitude and temperature in the Southern Hemisphere:
+Using the following code, I determine the r-value to be 0.675, indicating a strong to very strong positive correlation between latitude and temperature in the Southern Hemisphere:
 ```
 # Linear regression on the Southern Hemisphere
 x_values = southern_hemi_df["Lat"]
@@ -380,7 +380,7 @@ plot_linear_regression(x_values, y_values,
 
 ![humid_north.png](https://github.com/kcharb7/World_Weather_Analysis/blob/main/weather_data/humid_north.png)
 
-Using the following code, I determine the r-value to be 0.271, indicating a weak positive correlation between latitude and humidity in the Northern Hemisphere:
+Using the following code, I determine the r-value to be 0.282, indicating a weak positive correlation between latitude and humidity in the Northern Hemisphere:
 ```
 # Linear regression on the Northern Hemisphere
 x_values = northern_hemi_df["Lat"]
@@ -402,7 +402,7 @@ plot_linear_regression(x_values, y_values,
 
 ![humid_south.png](https://github.com/kcharb7/World_Weather_Analysis/blob/main/weather_data/humid_south.png)
 
-Using the following code, I determine the r-value to be 0.282, indicating a weak positive correlation between latitude and humidity in the Southern Hemisphere:
+Using the following code, I determine the r-value to be 0.301, indicating a weak positive correlation between latitude and humidity in the Southern Hemisphere:
 ```
 # Linear regression on the Southern Hemisphere
 x_values = southern_hemi_df["Lat"]
@@ -436,7 +436,7 @@ y_values = northern_hemi_df["Cloudiness"]
 # Get the r-value
 print(f"The r-value is: {r_value:.3f}")
 ```
-The r-value was 0.235, indicating a weak positive correlation between latitude and cloudiness in the Northern Hemisphere.
+The r-value was 0.188, indicating a weak positive correlation between latitude and cloudiness in the Northern Hemisphere.
 
 Next, I refactored my linear regression and plots code to create the plot for the Southern Hemisphere:
 ```
@@ -461,7 +461,7 @@ y_values = southern_hemi_df["Cloudiness"]
 print(f"The r-value is: {r_value:.3f}")
 ```
 
-The r-value was 0.213, indicating a weak positive correlation between latitude and cloudiness in the Southern Hemisphere. 
+The r-value was 0.413, indicating a weak positive correlation between latitude and cloudiness in the Southern Hemisphere. 
 
 ### *Correlation Between Latitude and Wind Speed*
 Refactoring the code used for the previous linear regression lines and plots, I set the x-value equal to the “Lat” column and the y-value equal to the “Wind Speed” column within the northern_hemi_df DataFrame. Then, I called the plot_linear_regression function with the x- and y-values and edited the title, y_label, and text_coordinated to refer to wind speed:
@@ -476,7 +476,7 @@ plot_linear_regression(x_values, y_values,
 
 ![wind_north.png](https://github.com/kcharb7/World_Weather_Analysis/blob/main/weather_data/wind_north.png)
 
-Using the following code, I determined the r-value to be 0.108, indicating a weak correlation between latitude and wind speed in the Northern Hemisphere:
+Using the following code, I determined the r-value to be 0.111, indicating a weak correlation between latitude and wind speed in the Northern Hemisphere:
 ```
 # Linear regression on the Northern Hemisphere
 x_values = northern_hemi_df["Lat"]
@@ -498,7 +498,7 @@ plot_linear_regression(x_values, y_values,
 
 ![wind_south.png](https://github.com/kcharb7/World_Weather_Analysis/blob/main/weather_data/wind_south.png)
 
-Using the following code, I determined the r-value to be -0.334, indicating a weak negative correlation between latitude and wind speed in the Southern Hemisphere:
+Using the following code, I determined the r-value to be -0.264, indicating a weak negative correlation between latitude and wind speed in the Southern Hemisphere:
 ```
 # Linear regression on the Southern Hemisphere
 x_values = southern_hemi_df["Lat"]
