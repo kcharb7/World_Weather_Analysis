@@ -1,4 +1,4 @@
-#WeatherPy with Python APIs
+# WeatherPy with Python APIs
 ## Overview
 ### *Purpose*
 PLANMYTRIP is a travel technology company that specializes in internet services for the hotel and lodging industry. Jack, the Head of Analysis for the User Interface Team, asked me to help provide real-time suggestions for clients’ ideal hotels based on a given range of latitude and longitude, as well as the right kind of weather. This was to be completed by collecting and analyzing weather data across 500 cities worldwide. 
